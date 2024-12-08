@@ -1,0 +1,41 @@
+# Fill in, commit and push each day.
+# Group Member: Shaun Aranha
+Nov 2, 2016
+	Yesterday :
+	Today     : Made the group
+	Obstacles :
+	
+Nov 3, 2016
+	Yesterday : Made the group
+	Today     : Received our group repo for the assignment. Also wrote in contact information for other members to contact me.
+	Obstacles : Whether or not they actually see the information
+
+Nov 4, 2016
+	Yesterday : Put in contact information
+	Today     : Discussed with group about delegating user stories and bugs and also exchanged contact information.
+	Obstacles : Won't be able to work on the assignment on Saturday because of a wedding I had to attend.
+
+Nov 5, 2016
+	Yesterday : Discussed with group about delegating user stories and bugs and also exchanged contact information.
+	Today     : Kept in contact with group about the assignment and what to do. Stayed up to date with whats going on.
+	Obstacles : Wasn't able to work on assignment for the whole as I wasn't home. 
+
+Nov 6, 2016
+	Yesterday : Kept in contact with group about the assignment and what to do. Stayed up to date with whats going on.
+	Today     : Began to work on Bug 4 of the assignment and started brainstorming possible design patterns to use.
+	Obstacles : Implementation of design patterns might be complicated.
+	
+Nov 7, 2016
+	Yesterday : Began to work on Bug 4 of the assignment and started brainstorming possible design patterns to use.
+	Today     : Worked on Bug 4 of the assignment
+	Obstacles : Trouble with implementing Bug 4 as we are running into some difficulty with it.
+	
+Nov 8, 2016
+	Yesterday : Worked on Bug 4 of the assignment
+	Today     : Finished Bug 4 of the assignment and then worked on user story 2,4,10 with Syed and Ryan 
+	Obstacles : Having problems with the shapes when being dragged to certain places.
+	
+Nov 9, 2016
+	Yesterday :Finished Bug 4 of the assignment and then worked on user story 2,4,10 with Syed and Ryan 
+	Today     :Trying to do user Bug 5, user story 5, and user story 6
+	Obstacles : Git problems 

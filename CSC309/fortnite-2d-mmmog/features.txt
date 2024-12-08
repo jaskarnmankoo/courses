@@ -1,0 +1,12 @@
+An itemized list of additional features:
+
+1) Touch-screen controls (Only shown on touch-enabled devices)
+ - Movement
+ - Fire Weapon / Build Block
+ - Switch Inventory
+ - Swap Weapons
+
+2) Server acts as a lobby, with multiple game rooms for players to join
+ - Each game room has its own players, items, and stage
+ - Two of the same player cannot join the same room at the same time
+ - When players join, they are randomly put into a room

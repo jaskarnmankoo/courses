@@ -1,0 +1,233 @@
+# User Stories/Bugs (add as appropriate), modify at each Sprint Planning Meeting
+# If a USER STORY is large, break it into smaller user stories.
+# For example, the color chooser user story involves: 
+# 1 Color chooser UI (which could be a USER STORY)
+# 2 Implementation of selected color into the drawing stream.
+
+
+
+
+--------------------------------------------------------------------------
+TYPE     : USER STORY 5
+NAME     : Color selector
+OWNER    : 
+PRIORITY : 4
+ESTIMATE : 2
+AS A     : user
+I WANT   : To be able to select the current drawing color, to be applied
+           to subsequent shapes. Example: 
+           		selects color red 
+           		mode circle
+           		draw a circle
+           		draw a circle
+           		mode rectangle
+           		draw a rectangle
+           		select color green
+           		draw a rectangle
+           		draw a rectangle
+           		select mode squiggle
+           		draw a squiggle
+           	results in two red circles and a red rectangle as well as
+           	two green rectangles and a green squiggle
+SO THAT  : I am able to draw shapes of different colors
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 6
+NAME     : Fill style selector
+OWNER    : 
+PRIORITY : 5
+ESTIMATE : 4
+AS A     : user
+I WANT   : To be able to select the current drawing style (filled or outline), to be applied
+           to subsequent shapes. Example: 
+           		selects fill style solid
+           		mode circle
+           		draw a circle
+           		draw a circle
+           		mode rectangle
+           		draw a rectangle
+           		select fill style outline
+           		draw a rectangle
+           		draw a rectangle
+           		select mode squiggle
+           		draw a squiggle
+           	results in two solid circles and a solid rectangle as well as
+           	two outlined rectangles and a squiggle
+SO THAT  : To be able to make filled or outlined shapes.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 7
+NAME     : Line thickness selector
+OWNER    : 
+PRIORITY : 5
+ESTIMATE : 3
+AS A     : user
+I WANT   : To be able to select the current line thickness, to be applied
+           to subsequent shapes. Example:
+           		select fill style outline 
+           		selects line thickness 1
+           		mode circle
+           		draw a circle
+           		draw a circle
+           		mode rectangle
+           		draw a rectangle
+           		select line thickness 9
+           		draw a rectangle
+           		draw a rectangle
+           		select mode squiggle
+           		draw a squiggle
+           	results in two thinly outlined circles and a thinly outlined 
+           	rectangle as well as two thickly outlined rectangles and a thick squiggle
+SO THAT  : To be able to change the thickness of outline of my shapes
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 8
+NAME     : Color chooser UI
+OWNER    : Jaskarn
+PRIORITY : 2
+ESTIMATE : 4
+AS A     : user
+I WANT   : Specify what color do I want to change the current drawing color to.
+SO THAT  : I know which color I am selecting.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 10
+NAME     : Draw Square Feedback.
+OWNER    : Ryan/Syed
+PRIORITY : 2
+ESTIMATE : 2
+AS A     : user
+I WANT   : Similar to a rectangle, I want to drag a corner and have
+		   the square appear mid construction.
+SO THAT  : I can see the square being drawn as I drag it.
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+TYPE     : BUG 2
+NAME     : Drawing selection mode not indicated
+OWNER    : Syed
+PRIORITY : 3
+ESTIMATE : 1
+ISSUE    : Currently ,you can't tell which mode "Circle", "Rectangle", ...
+           is currently selected. Is JButton correct, is there a way
+           to highlight the currently selected mode?
+--------------------------------------------------------------------------
+
+
+
+
+
+# COMPLETED USER STORIES/BUGS BELOW ###########################################
+--------------------------------------------------------------------------
+TYPE     : USER STORY 1
+NAME     : Draw Circle
+OWNER    : 
+PRIORITY : 
+ESTIMATE : 
+AS A     : user
+I WANT   : To click the center of the circle, drag, and release to specify
+           a circle to be drawn in the current style.
+SO THAT  : I can add circles to my canvas
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 3
+NAME     : Architecture behind choosing selection mode is poor
+OWNER    : Ryan
+PRIORITY : 1
+ESTIMATE : 4
+ISSUE    : Code is not modular and is difficult to expand. Need a better
+           architecture behind selecting a drawing mode, and handling
+           the drawing events. Consider some design patterns here.
+           Refactor ShapeChooserPanel and PaintPanel to get rid of the
+           'if' blocks in the PaintPanel mouse event code.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 6
+NAME     : Circle drawing is broken
+OWNER    : Ryan
+PRIORITY : 1
+ESTIMATE : 2
+ISSUE    : The first click should specify the center of the circle, with
+           a drag for the radius. This is not the case in the current
+           implementation.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 3
+NAME     : Draw Rectangle
+OWNER    : Jaskarn
+PRIORITY : 1
+ESTIMATE : 4
+AS A     : user
+I WANT   : To click on one corner of a rectangle, drag, and release to 
+		   specify two corners of a rectangle to be drawn in the current style.
+SO THAT  : I can add rectangles to my canvas
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 9
+NAME     : Draw Square
+OWNER    : Jaskarn
+PRIORITY : 1
+ESTIMATE : 3
+AS A     : user
+I WANT   : Similar to a rectangle, however I want the length of each side
+		   to be the same size.
+SO THAT  : I can draw squares easily.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 4
+NAME     : Architecture behind Model is poor
+OWNER    : Shaun
+PRIORITY : 1
+ESTIMATE : 4
+ISSUE    : Having a list of different types of drawable things in the
+           model is cumbersome. In fact, it is currently incorrect, with
+           Squiggle's not drawing properly. Need to re-architect the Model
+           so that it is more flexible, and easier to work with.
+           Consider some design patterns, or change of responsibility
+           here.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 2
+NAME     : Draw Circle Feedback
+OWNER    : Ryan/Syed
+PRIORITY : 2
+ESTIMATE : 3
+AS A     : user
+I WANT   : As a user is specifying a Circle, during the drag, a 'current'
+           circle should be on display. As the user drags, the 'current'
+           circle changes in real time so that a circle is drawn with
+           centre at users initial circle click, with radius out to
+           the current dragged mouse position.
+SO THAT  : I can see the circle I am about to build on release of the mouse
+           button.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 4
+NAME     : Draw Rectangle Feedback
+OWNER    : Ryan/Syed/Shaun
+PRIORITY : 2
+ESTIMATE : 3
+AS A     : user
+I WANT   : Similarly to Draw Circle Feedback, display the rectangle in mid construction.
+SO THAT  : I can see the rectangle I am about to build on release of the mouse button.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 1
+NAME     : Icons instead of text for drawing mode selection
+OWNER    : Syed
+PRIORITY : 1
+ESTIMATE : 2
+ISSUE    : Would be nice to have icons instead of "Circle", "Rectangle", ...
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 5
+NAME     : Squiggle is broken
+OWNER    : Shaun
+PRIORITY : 2
+ESTIMATE : 3
+ISSUE    : Squiggles are connected to each other by a straight line. Each drag
+		   of the mouse should be a separate squiggle. Possibly
+           the issue is with the representation of the squiggles in the Model.
+--------------------------------------------------------------------------
+# OMITTED USER STORIES/BUGS BELOW   ###########################################
+

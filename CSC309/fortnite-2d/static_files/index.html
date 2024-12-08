@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="EXPIRES" content="-1" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="jquery-3.3.1.min.js"></script>
+		<script src="ftdClient.js"></script>
+		<script language="javascript" src="models/game.js"></script>
+		<script language="javascript" src="models/gameobjects.js"></script>
+		<script language="javascript" src="ui.js"></script>
+		<script language="javascript" src="controller.js"></script>
+		<title>Fortnite2D</title>
+	</head>
+
+	<body onload="loadScreen()">
+		<h1>Fortnite2D</h1>
+		<hr />
+
+		<div id="ui_login">
+			<h2>Login</h2>
+			<p>Welcome to Fortnite2D!</p>
+			<p>
+				If you are a returning user, please login! If you are a new user, please
+				register!
+			</p>
+			<p>Hope you enjoy your experience!</p>
+
+			<label for="username">Username</label>
+			<input
+				type="text"
+				id="username"
+				name="user"
+				placeholder="Username"
+				required
+			/>
+			<br /><br />
+
+			<label for="password">Password</label>
+			<input
+				type="password"
+				id="password"
+				name="password"
+				placeholder="Password"
+				required
+			/>
+			<br /><br />
+
+			<input type="submit" id="loginSubmit" value="Login" />
+			<input type="submit" id="newUser" value="New User" />
+		</div>
+
+		<div id="ui_register">
+			<h2>Registration</h2>
+			<p>Registration for the greatest game is simple.</p>
+			<h3>Mandatory Fields</h3>
+			<label for="usernameR">Username</label>
+			<input
+				type="text"
+				id="usernameR"
+				name="user"
+				placeholder="Username"
+				required
+			/>
+			<br /><br />
+
+			<label for="passwordR">Password</label>
+			<input
+				type="password"
+				id="passwordR"
+				name="password"
+				placeholder="Password"
+				required
+			/>
+			<br /><br />
+
+			<label for="confirmPR">Confirm Password</label>
+			<input
+				type="password"
+				id="confirmPR"
+				name="confirmPR"
+				placeholder="Password"
+				required
+			/>
+
+			<h3>Optional Fields</h3>
+			<label for="emailR">Email</label>
+			<input type="email" id="emailR" name="emailR" placeholder="Email" />
+			<br /><br />
+
+			<label for="birthdayR">Birthday</label>
+			<input type="date" id="birthdayR" name="birthdayR" value="2000-01-01" />
+			<br /><br />
+
+			<label for="favcolorR">Favourite Color</label>
+			<input type="color" id="favColorR" name="favcolorR" value="#ff0000" />
+			<br /><br />
+
+			<label for="year">University Year</label>
+			<select id="yearR" name="year">
+				<option value="1st Year">1st Year</option>
+				<option value="2nd Year">2nd Year</option>
+				<option value="3rd Year">3rd Year</option>
+				<option value="4th Year">4th Year</option>
+				<option value="Other">Other</option>
+			</select>
+			<br /><br />
+
+			<label>Lecture Section</label><br />
+			<input id="LEC101" type="radio" name="lectureR" value="101" />
+			<label class="radioSpacing">LEC101</label>
+			<input id="LEC102" type="radio" name="lectureR" value="102" />
+			<label>LEC102</label>
+			<br /><br />
+
+			<input type="submit" id="backR" value="Back" />
+			<input type="submit" id="registerSubmit" value="Register" />
+		</div>
+
+		<div id="ui_profile">
+			<h2>Welcome</h2>
+			<h3>Game Instructions</h3>
+			<p>
+				Use wasd to move.<br />
+				Press b to swap between equip weapon/inventory.<br />
+				12345 are to swap inventory items.<br />
+				Left click fires your weapon.
+			</p>
+			<input type="submit" id="newGame" value="Game" /><br />
+			<div class="leftSide">
+				<h3>Your Profile Information</h3>
+				<hr />
+				<img src="images/profile.png" alt="profile picture" />
+				<hr />
+				<p id="nameUP"></p>
+				<p id="emailUP"></p>
+				<p id="birthdayUP"></p>
+				<p id="favColorUP"></p>
+				<p id="yearUP"></p>
+				<p id="lecUP"></p>
+				<input type="submit" id="updateProfileUP" value="Update Profile" />
+				<input type="submit" id="logoutUP" value="Logout" />
+				<br />
+				<input type="submit" id="deleteUP" value="Delete Account" />
+			</div>
+			<div class="rightSide">
+				<h3>Fortnite2D High Scores</h3>
+				<hr />
+				<div id="leaderboard"></div>
+			</div>
+		</div>
+
+		<div id="ui_delete">
+			<h2>Confirm Deletion</h2>
+			<p>Please confirm that this is you! Your progress will be deleted!</p>
+
+			<label for="passwordD">Password</label>
+			<input
+				type="password"
+				id="passwordD"
+				name="password"
+				placeholder="Password"
+				required
+			/>
+			<br /><br />
+
+			<input type="submit" id="confirmD" value="Confirm" />
+			<input type="submit" id="backD" value="Back" />
+		</div>
+
+		<div id="ui_update">
+			<h2>Update Profile</h2>
+			<p>Please input your new choices below.</p>
+
+			<label for="passwordU">New Password</label>
+			<input
+				type="password"
+				id="passwordU"
+				name="passwordU"
+				placeholder="Password"
+			/>
+			<br /><br />
+
+			<label for="confirmU">Confirm New Password</label>
+			<input
+				type="password"
+				id="confirmU"
+				name="confirmU"
+				placeholder="Password"
+			/>
+			<br /><br />
+
+			<label for="emailU">New Email</label>
+			<input type="email" id="emailU" name="emailU" placeholder="Email" />
+			<br /><br />
+
+			<label for="birthdayU">New Birthday</label>
+			<input type="date" id="birthdayU" name="birthdayU" value="2000-01-01" />
+			<br /><br />
+
+			<label for="favColorU">New Favourite Color</label>
+			<input type="color" id="favColorU" name="favColorU" value="#ff0000" />
+			<br /><br />
+
+			<label for="yearU">New University Year</label>
+			<select id="yearU" name="yearU">
+				<option value="1st Year">1st Year</option>
+				<option value="2nd Year">2nd Year</option>
+				<option value="3rd Year">3rd Year</option>
+				<option value="4th Year">4th Year</option>
+				<option value="Other">Other</option>
+			</select>
+			<br /><br />
+
+			<label>New Lecture Section</label><br />
+			<input id="LEC101U" type="radio" name="lectureU" value="101" />
+			<label class="radioSpacing">LEC101</label>
+			<input id="LEC102U" type="radio" name="lectureU" value="102" />
+			<label>LEC102</label>
+			<br /><br />
+
+			<hr />
+			<h3>Confirm Password</h3>
+			<p>
+				Please confirm your original password for the requested changes above to
+				take place!
+			</p>
+			<label for="confirmO">Confirm Original Password</label>
+			<input
+				type="password"
+				id="confirmO"
+				name="confirmO"
+				placeholder="Password"
+				required
+			/>
+			<br /><br />
+
+			<input type="submit" id="backU" value="Back" />
+			<input type="submit" id="updateSubmit" value="Update" />
+		</div>
+
+		<div id="ui_game">
+			<center>
+				<canvas id="stage" class="custom" width="800" height="800"></canvas>
+			</center>
+			<input type="submit" id="backG" value="Back" />
+			<input type="submit" id="pauseG" value="Pause" />
+			<input type="submit" id="resumeG" value="Resume" />
+			<input type="submit" id="restartG" value="Restart" />
+		</div>
+
+		<div id="errorMessage"></div>
+	</body>
+</html>

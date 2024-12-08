@@ -1,0 +1,49 @@
+# Fill in, commit and push each day.
+# Group Member: Syed Kabir
+Nov 2, 2016
+	Yesterday :
+	Today     : Made the group
+	Obstacles :
+	
+Nov 3, 2016
+	Yesterday : Made the group
+	Today     : Received our group repo for the assignment. Also wrote in contact information for other members to contact me.
+	Obstacles : Whether or not they actually see the information
+
+Nov 4, 2016
+	Yesterday : Put in contact information
+	Today     : Checked out code, fiddled with the program to get used to what was going on, and how certain things were being 
+				created. Not much work was done today. Contacted group and started talking about what needs to be set as 
+				priority. User Stories were also evaluated.
+	Obstacles : Due to short time, and my inability to work much over the weekend, an obstacle faced was getting to see the
+				updated code my team created. Was no able to work on this much.
+
+Nov 5, 2016
+	Yesterday : Communicated with group about UserStories and who will do what.
+	Today     : Attempted to create the rectangle and square userstory functions. This was later completed by another group 
+				member. Was not able to contribute due to not being able to access the new ShapeCHooserPanel that was implemented.
+	Obstacles : Difficulty creating new rectangle class, however this was later completed.
+
+Nov 6, 2016
+	Yesterday : Having rectangle class complete, will attempt another user story.
+	Today     : Will attempt to tackle a few Bugs (bugs 2 and 5), and will also try to attempt to create the thickness bar.
+	Obstacles : Had trouble finishing bug1.
+	
+Nov 7, 2016
+	Yesterday : Still figuring out how to import pictures. not making sense, will try to ask Arnold.
+	Today     : Asked Arnold and TA's figured it out, resized all the images, starting to find out another bug
+				that i can fix.
+	Obstacles : Finished bug 1, had a lot of issues with git merging
+	
+Nov 8, 2016
+	Yesterday : Had issues with git merging, will ask sadia/arnold today in lecture or office hours
+	Today     : Tried fixing feedback for circle with Ryan, we figured it out over skype. Problem kinda occurred with 
+				when we tried doing it for rectangle and square. Our shapes come out filled for some reason when moving
+				to the x/y directions. 
+	Obstacles : couldnt fix the feedbacks for the square or rectangle...
+	
+Nov 9, 2016
+	Yesterday : trying to fix the feedback user stories
+	Today     : Going to attempt to tackle either the polyline/squiggle commands or 
+				possibly work on the line thickness. Userstory7
+	Obstacles : couldnt finish...

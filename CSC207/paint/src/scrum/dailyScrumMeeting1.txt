@@ -1,0 +1,42 @@
+# Fill in, commit and push each day.
+# Group Member: Ryan Mock (Scrum Master)
+Nov 2, 2016
+	Yesterday :
+	Today     : Made the group
+	Obstacles :
+	
+Nov 3, 2016
+	Yesterday : Made the group
+	Today     : Received our group repo for the assignment. Also wrote in contact information for other members to contact me.
+	Obstacles : Whether or not they actually see the information
+
+Nov 4, 2016
+	Yesterday : Put in contact information.
+	Today     : Read through the product backlog and set the priorities and estimates of each one.
+	Obstacles : Making sure the priorities are well set so that theres no delay.
+
+Nov 5, 2016
+	Yesterday : Read through the priorities and assignmed myself bug 3. Made the branch and discussed architecture to implement
+	Today     : Implement a partial command design pattern to make PaintPanel modular. Finished Bug3 and merged the branch back into master.
+				Started work on UserStory 2. Started and Finished bug 6.
+	Obstacles : Knowing if it will work well.
+
+Nov 6, 2016
+	Yesterday : Finished Bug 3 and Bug 6. Started on UserStory2.
+	Today     : Continue work on UserStory 2. Helped with some discussion about the architecture to use for Bug 4.
+	Obstacles :	Understanding the code to be able to finish UserStory2.
+	
+Nov 7, 2016
+	Yesterday : Continue work on UserStory 2.
+	Today     : Had a meeting today with Shaun and had a discussion about what architecture to use for the model.
+	Obstacles : Understanding what we need to implement it.
+	
+Nov 8, 2016
+	Yesterday : Discussed with Shaun about factory implementation of Paint Model
+	Today     :	Finished implementing factory design pattern and help resolved merge issues.
+	Obstacles : Merge issues with merging Bug4 to master.
+	
+Nov 9, 2016
+	Yesterday : Finished implementing Factory design pattern and Started work on User Story 2,4,10
+	Today     : Merged userstory 2,4,10
+	Obstacles : Making it work.

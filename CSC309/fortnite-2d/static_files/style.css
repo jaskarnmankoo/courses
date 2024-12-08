@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+body {
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	background-image: linear-gradient(
+		to right,
+		rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 0.75),
+		rgba(0, 0, 0, 0)
+	);
+	width: 80%;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+	width: 50%;
+	padding: 12px 20px;
+	font-size: 14px;
+}
+
+input[type="submit"] {
+	background-color: #f3d250;
+	border: none;
+	padding: 14px 28px;
+	font-size: 14px;
+	margin: 20px 20px;
+	border-radius: 8px;
+}
+
+input[type="date"],
+input[type="color"],
+select {
+	width: 15%;
+	font-size: 14px;
+}
+
+input[type="submit"]:hover {
+	cursor: pointer;
+	box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.24),
+		0 10px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+input:required:invalid {
+	background-image: url("images/invalid.png");
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+
+input:required:valid {
+	background-image: url("images/valid.png");
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+
+#ui_register,
+#ui_profile,
+#ui_delete,
+#ui_update,
+#ui_game,
+#resumeG {
+	display: none;
+}
+
+#ui_register label {
+	font-weight: bold;
+}
+
+#errorMessage {
+	color: #ff0000;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.custom {
+	border: 1px solid black;
+	cursor: crosshair;
+}
+
+.leftSide {
+	width: 40%;
+	float: left;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin: 2% 5%;
+	border-radius: 8px;
+}
+
+.leftSide > img {
+	width: 12rem;
+}
+
+.rightSide {
+	width: 40%;
+	float: right;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin: 2% 5%;
+	background-color: #f3d250;
+	border-radius: 8px;
+}
+
+.radioSpacing {
+	margin: 0px 30px 0px 0px;
+}

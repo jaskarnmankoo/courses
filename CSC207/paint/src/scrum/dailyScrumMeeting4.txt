@@ -1,0 +1,42 @@
+# Fill in, commit and push each day.
+# Group Member: Jaskarn Mankoo
+Nov 2, 2016
+	Yesterday :
+	Today     : Made the group
+	Obstacles :
+	
+Nov 3, 2016
+	Yesterday : Made the group
+	Today     : Received our group repo for the assignment. Also wrote in contact information for other members to contact me.
+	Obstacles : Whether or not they actually see the information
+
+Nov 4, 2016
+	Yesterday : Put in contact information 
+	Today     : Assigned roles to one another and read the outline for the assignment and 
+	understood the code
+	Obstacles :
+
+Nov 5, 2016
+	Yesterday : Assigning of roles and reading the assignment and understanding code
+	Today     : Completed UserStory3 - Rectangle
+	Obstacles : Pushing it to the repo was a weird process, but I got it down
+
+Nov 6, 2016
+	Yesterday : Completed UserStory3 - Rectangle
+	Today     : Completed UserStory9 - Square
+	Obstacles :
+	
+Nov 7, 2016
+	Yesterday : Completed UserStory9 - Square
+	Today     : Worked on UserStory4
+	Obstacles : Deciding the design pattern for PaintModel
+	
+Nov 8, 2016
+	Yesterday : Worked on UserStory4
+	Today     : Had an essay to write could not contribute
+	Obstacles :
+	
+Nov 9, 2016
+	Yesterday : Had an essay to write could not contribute
+	Today     : Finished UserStory4
+	Obstacles :
